@@ -1,9 +1,9 @@
-const data = require('./database');
+const array = require('./database'); // pegas os itens de um array
 
 //1 - Crie uma função que mostre a quantidade de personagens
 
 function countCharacters() {
-  return data.characters.length;
+  return array.characters.length; ///conta os itens de um array
 }
 
 console.log(countCharacters());
