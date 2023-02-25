@@ -26,4 +26,4 @@ console.log(arrowFunction(10, 8));
 //HOFS - HIGHER ORDER FUNCTIONS
 const array = ['GOKU', 'GOHAN', 'BULMA', 'MESTRE KAME'];
 
-array.forEach((personagem) => console.log(`DBZ - ${personagem}`));
+array.forEach((personagem) => (`DBZ - ${personagem}`));// adiciona uma frase a cadas elemento
