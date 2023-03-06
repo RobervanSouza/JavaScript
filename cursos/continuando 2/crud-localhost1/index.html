@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD com localStorage</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main>
+
+        <h1>localStorage</h1>
+        <section class="caixa">
+            <p>Armazenamento local no browser.</p>
+            <p>Até 5MB. Formato de dados 'String'</p>
+            <p>'chave': valor => key: value</p>
+        </section>
+
+        <h2>CRUD</h2>
+        <ul class="lista">
+            <li class="item">[C] Create = criar -> .setItem(key, value)</li>
+            <li class="item">[R] Read = ler -> .getItem(key)</li>
+            <li class="item">[U] Update = atualizar -> .setItem(key, value)</li>
+            <li class="item">[D] Delete = apagar -> .removeItem(key)</li>
+        </ul>
+
+        <h2>métodos do localStorage</h2>
+        <ul class="lista">
+            <li class="item"><code>.setItem(key, value)</code></li>
+            <li class="item"><code>.getItem(key)</code></li>
+            <li class="item"><code>.removeItem(key)</code></li>
+            <li class="item"><code>.clear()</code></li>
+        </ul>
+
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
