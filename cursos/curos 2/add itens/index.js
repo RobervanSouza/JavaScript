@@ -11,11 +11,11 @@ meses[ 0 ] = 'Janeiro'
 document.write(produtos)// mostra no html
 
 // ADICIONAR no final push = empurre
-//produtos.push('Açúcar', 'Trigo')
-//codigos.push(40, 50, 60, 70)
-//meses.push('Mai', 'Jun', 'Ago', '07')
+produtos.push('Açúcar', 'Trigo')
+codigos.push(40, 50, 60, 70)
+meses.push('Mai', 'Jun', 'Ago', '07')
 
-
+document.write( produtos)
 
 // REMOVER do final pop = estourar
 //produtos.pop()
@@ -45,8 +45,9 @@ document.write(produtos)// mostra no html
 // meses2.lenght
 
 // spreed operator ... copiar
-//let teste = [ ...produtos, 'Ovo', 'Pera' ]
+let teste = [ ...produtos, 'Ovo', 'Pera' ]
 
 // ver indice de um valor no array
-// let pos = nome_array.indexOf('Valor')
-//let pos = produtos.indexOf('Uva')
+let posi = produtos.indexOf('Valor')
+
+console.log(posi)
