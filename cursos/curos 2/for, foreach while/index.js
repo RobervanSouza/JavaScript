@@ -20,7 +20,7 @@ for (let i = 0; i < carros.length; i++) {
 let frutas = [ 'Pera', 'Uva', 'Maçã', 'Banana', 'Melancia' ]
 
 frutas.forEach(function (fruta, i) {
-    document.write(`${i} ${fruta} <br>`)
+    document.write(`${i} ${fruta} <br>`) // mostra o index
 })
 
 carros.forEach(function (carro) {
@@ -44,8 +44,8 @@ console.log(contador)
 // criar variavel de contador fora do laco
 let iterador = 0
 
-do {
-    console.log(carros[ iterador ])
+do {// fraça while = enquanto
+    carros[ iterador ];
     iterador++ // contador + 1
 } while (iterador < carros.length)
 
