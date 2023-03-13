@@ -15,7 +15,6 @@ produtos.push('Açúcar', 'Trigo')
 codigos.push(40, 50, 60, 70)
 meses.push('Mai', 'Jun', 'Ago', '07')
 
-document.write( produtos)
 
 // REMOVER do final pop = estourar
 //produtos.pop()
@@ -24,25 +23,26 @@ document.write( produtos)
 //meses.pop()
 
 // ADICIONAR no inicio unshift
-//produtos.unshift('Uva', 'Maçã')
+produtos.unshift('Uva', 'Maçã')
 
 // REMOVER do inicio shift
-//produtos.shift()
+produtos.shift()
 
 // REMOVER de uma posicao especifica splice
-// splice = emendar
+splice = emendar
 // posicao inicial, quantos remover
-//codigos.splice(1, 3)
+codigos.splice(1, 3)
+document.write( produtos)
 
 // COPIAR array slice = fatiar porção
 // posicao inicial, quantos copiar
-//let meses1 = meses.slice()
-//let meses2 = meses.slice(0, 3)
+let meses1 = meses.slice()
+let meses2 = meses.slice(0, 3)
 
-// VER TAMANHO DO ARRAY length comprimento
-// meses.length
-// meses1.length
-// meses2.lenght
+VER// TAMANHO DO ARRAY length comprimento
+meses.length
+meses1.length
+meses2.lenght
 
 // spreed operator ... copiar
 let teste = [ ...produtos, 'Ovo', 'Pera' ]
