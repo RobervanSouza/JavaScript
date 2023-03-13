@@ -32,11 +32,7 @@ btnEnviar.addEventListener('click', function (e) {
     let altura = cxAltura.value
     let imc = (peso / (altura * altura)).toFixed(1)
 
-    console.log(nome)
-    console.log(idade)
-    console.log(peso)
-    console.log(altura)
-    console.log(imc)
+ 
 
     cxImc.value = imc
     let sit = situacaoDoPeso(imc)
@@ -63,7 +59,7 @@ btnEnviar.addEventListener('click', function (e) {
         sit: sit,
     }
 
-    console.log(pessoa)
+  
     dados[ 1 ].textContent = pessoa.nome
     dados[ 2 ].textContent = pessoa.idade + " anos"
     dados[ 3 ].textContent = pessoa.peso + " Kg"

@@ -10,22 +10,47 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    width: 100vw;
-    /* height: 100vh; */
-    background: #efefef;
-    overflow-x: hidden;
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10;
+    height: 100vh;
+    
+}
+.geral{
+   
+    width: 350px;
+    height: 450px;
+    flex-wrap: wrap;
+    
+    padding: 10;
+
 }
 
-main {
-    width: 100%;
-    padding: 1rem; /* espacamento interno */
+.geral .form .form-group{
+ background-color: #f44336;
+  margin-bottom: 1rem;
+  padding: 3;
+}
+.geral .form .form-group input{
+ background-color: aqua;
+  margin-bottom: 1rem;
+  padding: 1;
 }
 
-section {
-    margin: 0 auto;
-    padding: 1rem;
-    margin-bottom: 0.625rem;
+.geral .form .botao{
+    margin-top: 3rem;
+
+  margin-bottom: 3rem;
+  padding: 10;
+}
+.geral .teste div{
+   
+    width: 10rem;
+    margin-top: 3rem;
 }
 
 /* CLASS PARA FORMATAR COM JS */
@@ -36,16 +61,9 @@ section {
 }
 
 /* FORMULARIO */
-form {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-}
 
 /* DIV DOS INPUTS */
-.form-group {
-    margin: 0.625rem;
-}
+
 
 .input {
     width: 100%;

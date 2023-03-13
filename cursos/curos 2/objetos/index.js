@@ -57,3 +57,4 @@ produtos.preco = [ ...produtos.preco, 9.99, 4.79 ]
 carros.marca = [ ...carros.marca, 'WV' ]
 carros.modelo = [ ...carros.modelo, 'Fusca' ]
 carros.ano = [ ...carros.ano, '1979' ]
+document.write(carros.marca)
