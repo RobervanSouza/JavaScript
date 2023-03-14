@@ -25,102 +25,6 @@ body {
   overflow: hidden;
   
 }
-
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("./fundo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.imagem img {
-  width: 50vw;
-  display: flex;
-
-  height: 60vh;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.conteudo {
-  margin-top: -12rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 20vw;
-  height: min-content;
-  background-color: rgba(79, 55, 55, 0.25);
-  backdrop-filter: blur(15px);
-  border: 1px solid black;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  border-right: 1px solid rgba(32, 27, 27, 0.5);
-  border-radius: 20px;
-  
-}
-input[type=number], input[type=text] {
-    padding: 5px;
-    text-align: center;
-}
-.form-group button {
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-    margin-top: 12px;
-    margin-bottom: 13px;
-}
-button:hover {
-    box-shadow: 0 0 3px #222;
-}
-#btnCalcular {
-    background: #1a237e;
-}
-#btnLimpar {
-    background: #ff3d00;
-}
-.alerta {
-    background: #f44336;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-/* CLASS PARA FORMATAR COM JS */
-.aprovado {
-    background: blue;
-}
-
-.reprovado {
-    background: red;
-}
-
-.recuperacao {
-    background: yellow;
-}
-.cx{
-  margin-top: 7px;
-    border-radius: 13px;
-}
-.nota1{
-    border-radius: 4rem;
-}
-/* INPUTS */
-input[type=number], input[type=text] {
-    padding: 5px;
-    text-align: center;
-}
-
-.cx, input[type=text] {
-    border: 1px solid #ececec;
-    border-radius: 35px;
-}
-
-/*##################################################################################################################3*/
 header {
  
   
@@ -347,4 +251,3 @@ h3::before{
     width: 100%;
   }
 }
-/*##################################################################################################################3*/

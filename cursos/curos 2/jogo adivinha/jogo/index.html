@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styled.css">
+    <title>Jogo Adivinha</title>
+</head>
+<header>
+    <div class="header">
+
+        <div class="box">
+            <div class="block">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+
+            <div class="text">
+                <span style="--i:0;" data-text="Robervan">Robervan</span>
+                <span style="--i:1;" data-text="Work">Work</span>
+                <span style="--i:2;" data-text="To">To</span>
+                <span style="--i:3;" data-text="Opem">Opem</span>
+            </div>
+        </div>
+        <div class="nome">
+            <h3 data-text="Email: rob.robervan@hormail.com WhatsApp: (89) 99453-2058">Email: rob.robervan@hormail.com
+                WhatsApp: (89) 99453-2058</h3>
+        </div>
+        <div class="circulo">
+            <span style="--i:0"><i></i></span>
+            <span style="--i:1"><i></i></span>
+            <span style="--i:2"><i></i></span>
+            <span style="--i:3"><i></i></span>
+            <span style="--i:4"><i></i></span>
+            <span style="--i:5"><i></i></span>
+            <span style="--i:6"><i></i></span>
+            <span style="--i:7"><i></i></span>
+            <span style="--i:8"><i></i></span>
+            <span style="--i:9"><i></i></span>
+            <span style="--i:10"><i></i></span>
+            <span style="--i:11"><i></i></span>
+            <span style="--i:12"><i></i></span>
+            <span style="--i:13"><i></i></span>
+            <span style="--i:14"><i></i></span>
+            <span style="--i:15"><i></i></span>
+        </div>
+    </div>
+</header>
+
+<body onLoad='gerarNumeroSecreto()'>
+
+    <main id="tela-inicial">
+        <div class="page">
+            <div class="jogo" >
+
+            <div class="titulo">
+                <h1>Tente adivinha o número Secreto</h1>
+            </div>
+            <p class="centro" id="dica">Digite entre 1 e 10</p>
+                <section class="conteudos">
+                    <input type="number" step="1" min="1" max="10" name="inputNumero" id="inputNumero" class="input animar"
+                        onBlur="validarNumeroDigitado(this.value)" onClick=" ativarBtnChutar()" />
+                    <button id='btnChutar' class='botao' onClick="jogar()">Chutar</button>
+                    
+                   
+                </section>
+                <p class='centro' id='aviso'></p>
+            </div>
+
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
