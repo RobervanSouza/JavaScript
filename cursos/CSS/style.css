@@ -25,6 +25,34 @@ body {
   overflow: hidden;
   
 }
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./fundo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.conteudo {
+  margin-top: -12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20vw;
+  height: min-content;
+  background-color: rgba(79, 55, 55, 0.25);
+  backdrop-filter: blur(15px);
+  border: 1px solid black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(32, 27, 27, 0.5);
+  border-radius: 20px;
+  
+}
 header {
  
   
@@ -251,3 +279,5 @@ h3::before{
     width: 100%;
   }
 }
+
+/* ################## Iinico da estilização############################*/
