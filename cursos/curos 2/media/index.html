@@ -67,13 +67,13 @@
     <div class='form-group'>
         <label for="nota1">Nota 1</label>
         <input type="number" name="nota1" id="nota1" min='0.0' max='10.0' step="0.1" autofocus required
-            onBlur='validarNumero(this)' class="nota1" />
+            onBlur='validarNumero(this)' class="nota1"  placeholder="Nota1"/>
     </div>
 
     <div class='form-group'>
         <label for="nota2">Nota 2</label>
         <input type="number" name="nota2" id="nota2" min='0.0' max='10.0' step="0.1" required
-            onBlur='validarNumero(this)' class="nota1"/>
+            onBlur='validarNumero(this)' class="nota1" placeholder="Nota2"/>
     </div>
 
     <div class='form-group'>
@@ -83,11 +83,11 @@
 
     <div class='form-group'>
         <label for="media">Média</label>
-        <input type="number" name="media" id="media" class="nota1" value='' readonly />
+        <input type="number" name="media" id="media" class="nota1" value='' placeholder="Media" readonly />
     </div>
 
     <div class="form-group">
-        <input type="text" name="situacao" class="cx" id="situacao" placeholder='Situação Final' readonly />
+        <input type="text" name="situacao" class="cx" id="situacao" placeholder='Media Final' readonly />
     </div>
 </form>
 <p id='aviso' class=''></p>

@@ -110,5 +110,3 @@ btnLimpar.addEventListener('click', function () {
     moedaSelecionada[ 2 ].checked = false
     moedaSelecionada[ 3 ].checked = false
 })
-aula18.js
-Exibindo aula18.js…

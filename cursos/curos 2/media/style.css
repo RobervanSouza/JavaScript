@@ -92,15 +92,15 @@ button:hover {
 
 /* CLASS PARA FORMATAR COM JS */
 .aprovado {
-    background: #64dd17;
+    background: blue;
 }
 
 .reprovado {
-    background: #f44336;
+    background: red;
 }
 
 .recuperacao {
-    background: #ffc107;
+    background: yellow;
 }
 .cx{
   margin-top: 7px;
