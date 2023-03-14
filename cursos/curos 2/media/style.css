@@ -23,6 +23,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  
 }
 
 .container {
@@ -46,37 +47,99 @@ body {
   flex-direction: column;
 }
 .conteudo {
+  margin-top: -12rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 30vw;
-  height: 40vh;
+  width: 20vw;
+  height: min-content;
   background-color: rgba(79, 55, 55, 0.25);
   backdrop-filter: blur(15px);
   border: 1px solid black;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(32, 27, 27, 0.5);
   border-radius: 20px;
+  
+}
+input[type=number], input[type=text] {
+    padding: 5px;
+    text-align: center;
+}
+.form-group button {
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 13px;
+}
+button:hover {
+    box-shadow: 0 0 3px #222;
+}
+#btnCalcular {
+    background: #1a237e;
+}
+#btnLimpar {
+    background: #ff3d00;
+}
+.alerta {
+    background: #f44336;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* CLASS PARA FORMATAR COM JS */
+.aprovado {
+    background: #64dd17;
+}
+
+.reprovado {
+    background: #f44336;
+}
+
+.recuperacao {
+    background: #ffc107;
+}
+.cx{
+  margin-top: 7px;
+    border-radius: 13px;
+}
+.nota1{
+    border-radius: 4rem;
+}
+/* INPUTS */
+input[type=number], input[type=text] {
+    padding: 5px;
+    text-align: center;
+}
+
+.cx, input[type=text] {
+    border: 1px solid #ececec;
+    border-radius: 35px;
 }
 
 /*##################################################################################################################3*/
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+ 
   
-  width: 100vw;
-  height: 15vh;
-  
-
+  background: transparent;
   outline: none;
-  background-color: rgb(65, 61, 61);
+  background-color: #222;
+ 
+}
+.header{
+ align-items: center;
+ display: flex;
+ justify-content: space-around;
+ height: 134px;
+
 }
 .box {
+  flex-direction: column;
   margin-left: 9rem;
-  margin-top: 1.5rem;
+  
   outline: none;
   position: relative;
   height: 20px;
@@ -95,11 +158,12 @@ header {
   }
 }
 .box div {
+  flex-wrap: wrap;
   outline: none;
   align-items: center;
   justify-content: center;
   display: flex;
-
+flex-direction: column;
   position: relative;
   inset: 0;
   transform-style: preserve-3d;
@@ -155,8 +219,8 @@ header {
   content: "";
   position: absolute;
   top: 8px;
-  width: 50px;
-  height: 10px;
+  width: 5vw;
+  height: 1vh;
   background-color: green;
   transform: rotateX(-90deg);
   transition: .5s;
@@ -176,9 +240,8 @@ header {
   position: relative;
   width: 50px;
   height: 50px;
-  display: flex;
-  justify-content: center;
   margin-top: -3rem;
+  
 }
 .circulo span{
   position: absolute;
@@ -246,4 +309,41 @@ header {
    transform-origin: top;
    transform: rotate(1deg);   
     animation: animateCirculo 1.5s linear infinite;
+}
+.nome{
+  width: 294px;
+  height: 112px;
+  
+ 
+}
+.nome h3{
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #252839;
+  font-size: 18px;
+  position: relative;
+  -webkit-text-stroke: 0.1vw #383d52;
+}
+h3::before{
+ 
+
+  content: attr(data-text);
+  position: absolute;
+  height: 100%;
+  color: #01fe87;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right:1px solid #01fe87;
+  overflow: hidden;
+  animation: letras 6s linear infinite;
+}
+@keyframes letras {
+  0%, 10%, 100%{
+    width: 0;
+  }
+  70%, 90%{
+    width: 100%;
+  }
 }
