@@ -49,13 +49,11 @@ function semFocoNoCampo() {
         aviso.classList.remove('alerta')
     }, 3000);
 }
-let letras = document.querySelector('input[type=text]')
-function avisarQueTeclou(){
-    let numLetras = 1
-    console.log('Está teclando ' + (letras.value.length + numLetras))
+let letras = document.querySelector('')
+function avisaQueTeclou(){
     
     formulario.reset() // limpar form
-    aviso.textContent = ('', + (letras.value.length + numLetras))
+    aviso.textContent = ('esta digitando')
     aviso.classList.add('alerta')
     setTimeout(function () {
         aviso.textContent = ''
