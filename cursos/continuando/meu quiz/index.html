@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Quiz</title>
+</head>
+
+<header>
+    <div class="header">
+
+        <div class="box">
+            <div class="block">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+
+            <div class="text">
+                <span style="--i:0;" data-text="Robervan">Robervan</span>
+                <span style="--i:1;" data-text="Work">Work</span>
+                <span style="--i:2;" data-text="To">To</span>
+                <span style="--i:3;" data-text="Opem">Opem</span>
+            </div>
+        </div>
+        <div class="nome">
+            <h3 data-text="Email: rob.robervan@hormail.com WhatsApp: (89) 99453-2058">Email: rob.robervan@hormail.com
+                WhatsApp: (89) 99453-2058</h3>
+        </div>
+        <div class="circulo">
+            <span style="--i:0"><i></i></span>
+            <span style="--i:1"><i></i></span>
+            <span style="--i:2"><i></i></span>
+            <span style="--i:3"><i></i></span>
+            <span style="--i:4"><i></i></span>
+            <span style="--i:5"><i></i></span>
+            <span style="--i:6"><i></i></span>
+            <span style="--i:7"><i></i></span>
+            <span style="--i:8"><i></i></span>
+            <span style="--i:9"><i></i></span>
+            <span style="--i:10"><i></i></span>
+            <span style="--i:11"><i></i></span>
+            <span style="--i:12"><i></i></span>
+            <span style="--i:13"><i></i></span>
+            <span style="--i:14"><i></i></span>
+            <span style="--i:15"><i></i></span>
+        </div>
+    </div>
+</header>
+
+
+<body>
+    <main class="container">
+        <section class="conteudo">
+            <h1>Quiz</h1>
+            <div id="instrucoes" class="placar">
+                Leia e responda a questão abaixo
+            </div >
+            <article class="questoes" >
+
+            <div class="topoQuestao">
+            <span id='numQuestao'></span>
+            <h2 id='pergunta'>??</h2>
+            </div>
+        <div class='corpo'>
+            <ol type='A' id='alternativas'>
+                <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+            </ol>
+        </div>
+        <article id='aviso' class='centro'>
+            <input type="range" value='1' min='1' max='10' step='1' name="progresso" id="progresso" disabled /> <br>
+            <span id='numero'></span> de <span id='total'></span>
+        </article>
+            </article>
+
+        </section>
+
+    </main>
+    <input type="hidden" id='correct' name='correct' value='' />
+    <script src="./index.js"></script>
+</body>
+
+</html>
