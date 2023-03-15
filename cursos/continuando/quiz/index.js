@@ -193,5 +193,3 @@ function fimDoJogo() {
         location.reload();
     }, 2000)
 }
-aula20.js
-Exibindo aula20.js…

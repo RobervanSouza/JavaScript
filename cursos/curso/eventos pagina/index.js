@@ -61,11 +61,12 @@ function avisaQueTeclou(){
     }, 3000);
 }
 
-let botao1 = document.querySelector('#btn1')
-let botao2 = document.querySelector('#btn2')
-let botaoEnviar = document.querySelector('#titulo');
-
-botaoEnviar.addEventListener("mouseover", function (){
-  this.style.backgroundColor = "red";
+function botao() {
+    aviso.textContent = ('Esta no botão Enviar')
+    aviso.classList.add('alerta')
+    setTimeout(function () {
+        formulario.reset()
+        aviso.textContent = ''
+        aviso.classList.remove('alerta')
+    }, 3000);
 }
-)

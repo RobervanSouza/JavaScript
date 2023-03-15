@@ -46,5 +46,3 @@ function zerar() {
     numeroF.value = fahrenheit.value
     numeroK.value = kelvin.value
 }
-aula19.js
-Exibindo aula19.js…

@@ -273,5 +273,3 @@ function fimDoJogo() {
     }, 8000)
 
 }
-aula21 - quiz2.js
-Exibindo aula21 - quiz2.js…

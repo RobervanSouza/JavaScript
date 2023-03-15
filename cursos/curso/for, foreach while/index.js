@@ -37,7 +37,6 @@ while (contador < frutas.length) {
     contador++ // contador + 1
 }
 // aqui o contador esta com o valor 5
-console.log(contador)
 
 /* DO WHILE faca enquanto */
 
@@ -50,4 +49,5 @@ do {// fraça while = enquanto
 } while (iterador < carros.length)
 
 // aqui o iterador esta com o valor 3
-console.log(iterador)
+
+document.write(iterador)

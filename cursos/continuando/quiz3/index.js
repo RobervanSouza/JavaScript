@@ -31,15 +31,11 @@ let somErro = document.querySelector('#somErro')
 let somAplausos = document.querySelector('#somAplausos')
 
 // ENDERECO DO ARQUIVO JSON
-const url = 'data.json'
 
-function pegarDados(i) {
 
-    fetch(url).then(response => {
+function pegarDados(i)  {
 
-        return response.json();
-
-    }).then(data => {
+   const api = fetch(url).then((response) => response.json()).then(data => {
 
         if (data.erro) {
             console.log("Erro ao acessar o JSON")
@@ -53,8 +49,9 @@ function pegarDados(i) {
 
         // passe o valor de i no parametro
         atribuirDados(data, i)
-
+return data
     })
+    return api
 
 } // fim pegarDados
 
@@ -159,5 +156,3 @@ function fimDoJogo() {
     }, 7000)
 
 }
-aula22 - app - com - json.js
-Exibindo aula22 - app - com - json.js…
