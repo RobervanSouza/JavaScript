@@ -32,11 +32,11 @@ let somAplausos = document.querySelector('#somAplausos')
 
 // ENDERECO DO ARQUIVO JSON
 
-
-function pegarDados(i)  {
+const url = "./data.json"
+function pegarDados(itensDoArray)  {
 
    const api = fetch(url).then((response) => response.json()).then(data => {
-
+       
         if (data.erro) {
             console.log("Erro ao acessar o JSON")
             return
@@ -44,34 +44,37 @@ function pegarDados(i)  {
 
         // passar o quantidade de questoes para a variavel
         let qtdQuestoes = (data.questoes.length) - 1
-        // escrver a qtdQuestoes para total
+        // escrver a qtdQuestoes para total em baixo
         total.textContent = parseInt(qtdQuestoes)
 
-        // passe o valor de i no parametro
-        atribuirDados(data, i)
-return data
+        // passe o valor de itensDoArray no parametro
+        //data e o array  o [ itensDoArray ]
+        atribuirDados(data, itensDoArray) // pega os dados o itensDoArray a a posição por exemplo questao 1 e em diante
+        console.log(data, 'questões')
+
     })
-    return api
+    
 
 } // fim pegarDados
 
-function atribuirDados(data, i) {
-    if (i >= data.questoes.length) {
+function atribuirDados(data, index) {
+    if (index >= data.questoes.length) {
+        // 
         //console.log('Fim das questoes')
-        i = 1
+        index = 1
     }
-    nQuestao.textContent = data.questoes[ i ].numQuestao
-    pergunta.textContent = data.questoes[ i ].pergunta
+    nQuestao.textContent = data.questoes[ index ].numQuestao
+    pergunta.textContent = data.questoes[ index ].pergunta
 
-    a.textContent = data.questoes[ i ].alternativaA
-    b.textContent = data.questoes[ i ].alternativaB
-    c.textContent = data.questoes[ i ].alternativaC
-    d.textContent = data.questoes[ i ].alternativaD
+    a.textContent = data.questoes[ index ].alternativaA
+    b.textContent = data.questoes[ index ].alternativaB
+    c.textContent = data.questoes[ index ].alternativaC
+    d.textContent = data.questoes[ index ].alternativaD
 
-    numero.textContent = data.questoes[ i ].numQuestao
+    numero.textContent = data.questoes[ index ].numQuestao
 
     let certa = document.querySelector('#correct')
-    certa.value = data.questoes[ i ].correta
+    certa.value = data.questoes[ index ].correta
     //console.log(resposta)
 }
 

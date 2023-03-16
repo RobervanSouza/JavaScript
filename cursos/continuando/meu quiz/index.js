@@ -115,7 +115,30 @@ const q10 = {
     correta: "5º maior",
 }
 
-const questoes = [ q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10 ]
+
+const url = "./data.json"
+function pegarDados(i) {
+
+    const api = fetch(url).then((response) => response.json()).then(data => {
+
+        if (data.erro) {
+            console.log("Erro ao acessar o JSON")
+            return
+        }
+
+        // passar o quantidade de questoes para a variavel
+        let qtdQuestoes = (data.questoes.length) - 1
+        // escrver a qtdQuestoes para total
+        total.textContent = parseInt(qtdQuestoes)
+
+        // passe o valor de i no parametro
+        atribuirDados(data, i)
+        console.log(data)
+
+    })
+
+
+} // fim pegarDados
 let numero = document.querySelector('#numero')
 let total = document.querySelector('#total')
 numero.textContent = (q1.numQuestao)
