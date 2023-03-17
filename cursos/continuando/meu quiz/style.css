@@ -368,3 +368,82 @@ h3::before {
     padding: 1rem;
     border-radius: 8px;
 }
+.resultado{
+   display: none;
+  flex-direction: column;
+  gap: 10px;
+   position: absolute;
+  margin-top: -5rem;
+  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 450vw;
+  min-height: 14px;
+  min-width: 11vw;
+  padding: 14px 12px;
+  gap: 6px;
+  height: min-content;
+  background-color: rgba(79, 55, 55, 0.25);
+  backdrop-filter: blur(15px);
+  border: 1px solid black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(32, 27, 27, 0.5);
+  border-radius: 20px;
+}
+
+
+.questoes ol li {
+    user-select: none;
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--secundaria);
+}
+.questao ol li:hover {
+    background: var(--secundaria);
+    cursor: pointer;
+}
+@keyframes piscar {
+    0% {
+        filter: drop-shadow(0 0 15px #00b0ff);
+        -webkit-filter: drop-shadow(0 0 15px #00b0ff);
+        -moz-filter: drop-shadow(0 0 15px #00b0ff);
+        -o-filter: drop-shadow(0 0 15px #00b0ff);
+        -ms-filter: drop-shadow(0 0 15px #00b0ff);
+    }
+    100% {
+    }
+}
+
+.animar {
+    animation: piscar .75s infinite alternate;
+}
+
+.aparecer {
+    animation: aparecer .5s infinite alternate;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+.acertou {
+    background: var(--verde);
+    animation: aparecer 0.1s infinite alternate;
+}
+
+.errou {
+    background: var(--vermelho);
+    animation: aparecer 0.1s infinite alternate;
+}
+.input{
+ background-color: #01fe87;
+  color: #01fe87;
+}

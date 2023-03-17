@@ -56,34 +56,51 @@
 <body>
 
     <main class="container">
+<div class="resultado">
+    <h1>Resultado do Quiz</h1>
+    <div class='form-group'>
+        <label for="media">Média</label>
+        <input type="number" name="media" id="media" class="nota1" value='' placeholder="Media" readonly />
+    </div>
 
+    <div class="form-group">
+        <input type="text" name="situacao" class="cx" id="situacao" placeholder='Situacao' readonly />
+    </div>
+    <button type="reset" id="reiniciar" onclick="">Reiniciar Jogo</button>
+</div>
 
         <div class="conteudo">
 
-            <h1>Quiz</h1>
-            <div id="instrucoes" class="placar">
-                Leia e responda a questão abaixo
-            </div>
-            <article class="questoes">
+           
+            <div class="placa">
+                <h1>Quiz</h1>
+                <div id="instrucoes" class="placar">
+                    Leia e responda a questão abaixo
+                </div>
+                <article class="questoes">
 
-                <div class="topoQuestao">
-                    <span id='numQuestao'></span>
-                    <h2 id='pergunta'>??</h2>
-                </div>
-                <div class='corpo'>
-                    <ol type='A' id='alternativas'>
-                        <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
-                        <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
-                        <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
-                        <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
-                    </ol>
-                </div>
-                <article id='aviso' class='centro'>
-                    <input type="range" value='1' min='1' max='12' step='1' name="progresso" id="progresso" disabled />
-                    <br>
-                    <span id='numero'></span> de <span id='total'></span>
+                    <div class="topoQuestao">
+                        <span id='numQuestao'></span>
+                        <h2 id='pergunta'>??</h2>
+                    </div>
+                    <div class='corpo'>
+                        <ol type='A' id='alternativas'>
+                            <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                            <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                            <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                            <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        </ol>
+                    </div>
+                    <article id='aviso' class='centro'>
+                        <input class="input" type="range" value='1' min='1' max='12' step='1' name="progresso" id="progresso"
+                            disabled />
+                        <br>
+                        <span id='numero'></span> de <span id='total'></span>
+                    </article>
+
                 </article>
-            </article>
+            </div>
+
 
         </div>
 
