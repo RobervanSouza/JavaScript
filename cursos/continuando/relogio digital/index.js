@@ -107,8 +107,8 @@ function getUserPosition() {
         let long = pos.coords.longitude
         url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&APPID=622296cd4fda08b69c46ccfa980f968d`
         fetchApi(url)
-        console.log(url)
     })
+    console.log(url , "aqui")
 }
 
 function fetchApi(url) {
@@ -134,5 +134,3 @@ function fetchApi(url) {
 }
 
 getUserPosition();
-aula23.js
-Exibindo aula23.js…
