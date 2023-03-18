@@ -1,0 +1,68 @@
+{
+   "lutadores":[
+        {
+            "nome": "lutador1",
+            "nacionalidade": "brasil",
+            "idade": 32,
+            "peso": 121,
+            "altura": 1.6,
+            "imagem": "./img/adsa.jpg"
+        },
+        {
+          "nome": "lutador1",
+          "nacionalidade": "brasil",
+          "idade": 32,
+          "peso": 121,
+          "altura": 1.6,
+          "imagem": "./img/download (1).jpg"
+        },
+        {
+          "nome": "lutador1",
+          "nacionalidade": "brasil",
+          "idade": 32,
+          "peso": 121,
+          "altura": 1.6,
+          "imagem": "./img/download (2).jpg"
+        },
+        {
+          "nome": "lutador1",
+          "nacionalidade": "brasil",
+          "idade": 32,
+          "peso": 121,
+          "altura": 1.6,
+          "imagem": "./img/download (3).jpg"
+        },
+        {
+          "nome": "lutador1",
+          "nacionalidade": "brasil",
+          "idade": 32,
+          "peso": 121,
+          "altura": 1.6,
+          "imagem": "./img/download.jpg"
+        },
+        {
+          "nome": "lutador1",
+          "nacionalidade": "brasil",
+          "idade": 32,
+          "peso": 121,
+          "altura": 1.6,
+          "imagem": "./img/download (4).jpg"
+        },
+        {
+            "nome": "lutador1",
+            "nacionalidade": "brasil",
+            "idade": 32,
+            "peso": 121,
+            "altura": 1.6,
+            "imagem": "./img/download (1).jpg"
+        },
+        {
+          "nome": "lutador1",
+          "nacionalidade": "brasil",
+          "idade": 32,
+          "peso": 121,
+          "altura": 1.6,
+          "imagem": "./img/download (1).jpg"
+        }
+    ]
+}
