@@ -58,47 +58,44 @@
 
 <body onload="Relogio()">
     <main>
-<!--
- <header>
 
-                <div id='relogioDigital'>
-                    <div>
+ 
 
-                        <h1>Relogio digital</h1>
+               
+             
 
-                        <span id='h'></span>:
-                        <span id='m'></span>:
-                        <span id='s'></span>
-                    </div>
-                </div>
-                <div id='telaSmart'>
+            
 
-                    <div id='relogioSmart'>
-                        <span id='hSmart'></span>
-                        <span class='doisPontos'>:</span>
-                        <span id='mSmart'></span>
-                        <span class='doisPontos'>:</span>
-                        <span id='sSmart'></span>
-                    </div>
-
-                    <div id='dataSmart'>
-                        <span id='semana'></span>
-                        <span id='data'></span>
-                    </div>
-
-                    <div id="temperatura">
-                        <h1 class="city"></h1>
-                        <h2>🌡<span id="temp"></span>°C 💧<span id='umidad'></span>%</h2>
-                    </div>
-
-                </div>
-
-            </header>
--->
         <div class="container">
-           
+            
+        <div id='telaSmart' >
+            <div id='relogioDigital' class="relogiodigital">
+            
+        
+                    <h1>Relogio digital</h1>
+             
+                
+            
+        
+            <div id='relogioSmart'>
+                <span id='hSmart'></span>
+                <span class='doisPontos'>:</span>
+                <span id='mSmart'></span>
+                <span class='doisPontos'>:</span>
+                <span id='sSmart'></span>
+            </div>
+        
+            <div id='dataSmart'>
+                <span id='semana'></span>
+                <span id='data'></span>
+            </div>
+        </div>
+            
+        
+        </div>
             
             <div class="conteudo">
+                
                 <h2>Confira o clima em sua cidade</h2>
                     <div class="form-input-container">
                         <input 
@@ -111,7 +108,7 @@
                         </button>
                     </div>
                     
-                    <div id="wather-data" style="visibility: hidden;" > <!--esconde a div-->
+                    <div id="wather-data" class="hide" > <!--esconde a div-->
                         <h2>
                             <i class="fa-solid fa-location-dot"></i>
                             <span id="city" ></span><img src="" alt="bandeira do pais" id="country">

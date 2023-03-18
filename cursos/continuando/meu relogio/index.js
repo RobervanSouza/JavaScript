@@ -1,4 +1,4 @@
-/*
+
 let relogio = document.querySelector('#relogio')
 let h = document.querySelector('#h')
 let m = document.querySelector('#m')
@@ -26,9 +26,9 @@ function Relogio(){
     if(stringSegundos.length == 1) segundos = "0" + segundos
     if(stringHora.length == 1) hora =  "0"+ hora
     if(stringMinutos.length == 1) minutos = "0"  + minutos
-    h.textContent = hora
-    m.textContent = minutos
-    s.textContent = segundos
+    hSmart.textContent = hora
+    mSmart.textContent = minutos
+    sSmart.textContent = segundos
     hSmart.textContent = hora
     mSmart.textContent = minutos
     sSmart.textContent = segundos
@@ -84,54 +84,11 @@ function pegaData() {
 }
 
 pegaData()
-var options = {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-}
-let mostraTela = new Date()
 
-console.log(mostraTela.toLocaleString('pt-BR'))
-console.log(mostraTela.toLocaleString('pt-BR', options))
-console.log(mostraTela.toLocaleDateString('pt-BR'))
-console.log(mostraTela.toLocaleTimeString('pt-BR'))
-function getLocalAtual() {
-    const APIkey = '557818a8d7e058d695aa1fdee7c6c6b0'
-    let url = '';
-    navigator.geolocation.getCurrentPosition((posicao) => {
-        let latitude = posicao.coords.latitude
-        let longitude = posicao.coords.longitude
-        url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${APIkey}`
-        fetchApi(url)
-        
-    })
-    console.log(url, "aqui")
-}
-function fetchApi(url) {
-    let city = document.querySelector('.city')
-    let temperature = document.querySelector('#temp')
-    let humidity = document.querySelector('#umidad')
 
-    fetch(url)
-        .then((data) => {
-            return data.json()
-        })
-        .then((data) => {
-            let tempInCelsius = ((5 / 9) * (data.main.temp - 32)).toFixed(1);
-            
-            city.textContent = data.name
-            temperature.innerHTML = tempInCelsius
-            humidity.innerHTML = data.main.humidity
-        })
-        .catch((err) => {
-            city.innerText = `Impossível acessar o OpenWeather. Verifique a sua conexão.`;
-            temperature.innerHTML = `-`;
-        })
-        console.log(city, "aqui")
-    }
 
-*/
+
+
     /* ###################################################*/
 
 const cidade = "https://www.countryflagicons.com/FLAT/64/DE.png";
@@ -178,6 +135,6 @@ const apiCidade = async (city) => {
     conutryElement.setAttribute("src", `https://www.countryflagicons.com/FLAT/64/${data.sys.country}.png` );
     umidityElement.innerHTML = `${data.main.humidity}%`;
     windElement.innerHTML = `${data.wind.speed}Km/h`;
-    weather.classList.remove("hidden")
+    weather.classList.remove("hide")
 
 }
