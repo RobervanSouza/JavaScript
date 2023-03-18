@@ -147,13 +147,9 @@ const umidityElement = document.querySelector("#umidity span");
 const windElement = document.querySelector("#wind span");
 const weatherElement = document.querySelector("#weather-icon");
 const conutryElement = document.querySelector("#country");
-
+const weather = document.querySelector("#wather-data")
 // pega os dados da api
 
-const apiCidade = (city) => {
-    getApi(city)
-    //console.log(input , "pega os dados que foram digitados na input")
-}
 
 searchBtn.addEventListener("click", (event) => {
     event.preventDefault();
@@ -168,5 +164,20 @@ const getApi = async (city) => {
     const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}&lang=pt_br`
     const res = await fetch(apiURL);
     const data = await res.json();
-    console.log(data , "bucando dados da api");
+    //console.log(data , "bucando dados da api");
+    return data
+}
+
+const apiCidade = async (city) => {
+    const data = await getApi(city)
+    console.log(data , "pega os dados que foram digitados na input mostra a cidade")
+    cidadeElement.innerHTML = data.name;
+    temperaturalement.innerHTML = parseInt(data.main.temp);
+    tempoElement.innerHTML = data.weather[0].description;
+    weatherElement.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[ 0 ].icon}.png`);
+    conutryElement.setAttribute("src", `https://www.countryflagicons.com/FLAT/64/${data.sys.country}.png` );
+    umidityElement.innerHTML = `${data.main.humidity}%`;
+    windElement.innerHTML = `${data.wind.speed}Km/h`;
+    weather.classList.remove("hidden")
+
 }
