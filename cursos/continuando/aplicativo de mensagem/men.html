@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<header>
+    <div class="header">
+
+        <div class="box">
+            <div class="block">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+
+            <div class="text">
+                <span style="--i:0;" data-text="Robervan">Robervan</span>
+                <span style="--i:1;" data-text="Work">Work</span>
+                <span style="--i:2;" data-text="To">To</span>
+                <span style="--i:3;" data-text="Opem">Opem</span>
+            </div>
+        </div>
+        <div class="nome">
+            <h3 data-text="Email: rob.robervan@hormail.com WhatsApp: (89) 99453-2058">Email: rob.robervan@hormail.com
+                WhatsApp: (89) 99453-2058</h3>
+        </div>
+        <div class="circulo">
+            <span style="--i:0"><i></i></span>
+            <span style="--i:1"><i></i></span>
+            <span style="--i:2"><i></i></span>
+            <span style="--i:3"><i></i></span>
+            <span style="--i:4"><i></i></span>
+            <span style="--i:5"><i></i></span>
+            <span style="--i:6"><i></i></span>
+            <span style="--i:7"><i></i></span>
+            <span style="--i:8"><i></i></span>
+            <span style="--i:9"><i></i></span>
+            <span style="--i:10"><i></i></span>
+            <span style="--i:11"><i></i></span>
+            <span style="--i:12"><i></i></span>
+            <span style="--i:13"><i></i></span>
+            <span style="--i:14"><i></i></span>
+            <span style="--i:15"><i></i></span>
+        </div>
+    </div>
+</header>
+
+
+<body>
+    <div class="container">
+        <div id="abrirModal" class="modal">
+            <div>
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <h2>Aviso</h2>
+                <p>É obrigatório escolher uma data, digitar uma citação e autoria antes de postar. </p>
+            </div>
+        </div>
+
+        <h1>Escreva sua poesia</h1>
+        <p id="aviso" >Escreva um poema e envio para seus colegas</p>
+        <form id="formulario" class="formulario">
+            <div class="form-group data" >
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data" required>
+            </div>
+
+            <div class="form-group citacao" >
+                <label for="citacao">Citação</label>
+                <textarea class="poema" type="text" name="citacao" id="citacao" rows="2"  placeholder="Digita seu Poema"></textarea>
+            </div>
+
+            <div class="form-group autor" >
+                <label for="autoria">Autor</label>
+                <input class="place" type="text" name="autoria" id="autoria" placeholder="Digita o nome do Autor (a)" required>
+            </div>
+
+            <div class="botoes">
+                <button type="button" id="btnCreate" class="btn" onclick="criarCitacao()">
+                    Criar
+                </button>
+                <button class="limpar" type="reset" id="reset">Limpar</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="conteudos">
+<p id='aviso2'></p>
+
+
+    <article id='citacao00' class="citacao1 fundo1">
+        <h2></h2>
+        <blockquote></blockquote>
+        <span></span>
+    </article>
+
+</div>
+
+    <script src="./men.js"></script>
+    <script src="js/html2canvas.js"></script>
+</body>
+
+</html>
