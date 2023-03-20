@@ -1,16 +1,16 @@
 function LongestIncreasingSequence(arr) {
-    const n = arr.length;
-    const lis = new Array(n).fill(1);
+    const numero = arr.length;
+    const lista = new Array(numero).fill(1);
 
-    for (let i = 1; i < n; i++) {
-        for (let j = 0; j < i; j++) {
-            if (arr[ i ] > arr[ j ]) {
-                lis[ i ] = Math.max(lis[ i ], lis[ j ] + 1);
+    for (let index = 1; index < numero; index++) {
+        for (let valor = 0; valor < index; valor++) {
+            if (arr[ index ] > arr[ valor ]) {
+                lista[ index ] = Math.max(lista[ index ], lista[ valor ] + 1);
             }
         }
     }
     
-    return Math.max(...lis);
+    return Math.max(...lista);
 }
 
 console.log(LongestIncreasingSequence([ 10, 22, 9, 33, 21, 50, 41, 60, 22, 68, 90 ]));

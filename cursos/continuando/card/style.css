@@ -39,14 +39,13 @@ body {
   
 }
 
-.conteudo {
-  
-  width: min-content;
-  height: min-content;
+.conteudos{
+  width: 340px;
+  height: 330px;
   gap: 44px;
   padding: 16px;
   margin-bottom: 4px;
-  background-color: red;
+  
   backdrop-filter: blur(15px);
   border: 1px solid black;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -281,24 +280,105 @@ h3::before {
     width: 100%;
   }
 }
+.foto{
+  width: 124px;
+  height: 123px;
+}
 .form{
-  gap: 4px;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-}
-.form span{
-
-  width: 45%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-    background-color: rgba(79, 55, 55, 0.25);
+  width: min-content;
+  height: min-content;
+  margin-bottom: 13px;
+  text-align: center;
   backdrop-filter: blur(15px);
- 
+  border: 1px solid black;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(32, 27, 27, 0.5);
   border-radius: 20px;
-  border: none;
+  box-sizing: border-box;
+  padding: 1rem;
+  gap: 9px;
+}
+.nacionalidade{
+   width: 143px;
+  height: 33px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  background-color: aliceblue;
+  
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(32, 27, 27, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+
+}
+
+.idade{
+  width: 91px;
+  height: 33px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  background-color: aliceblue;
+  
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(32, 27, 27, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+}
+
+.form h2{
+
+  width: 151px;
+  height: 33px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  background-color: aliceblue;
+  font-size: 12px;
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(32, 27, 27, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+
+}
+.peso{
+    width: 91px;
+  height: 33px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  background-color: aliceblue;
+  
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(32, 27, 27, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+}
+.altura{
+  width: 91px;
+  height: 33px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  background-color: aliceblue;
+  
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(32, 27, 27, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
 }

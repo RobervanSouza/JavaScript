@@ -32,3 +32,10 @@ function MissingDigit(str) {
 
     return parseInt(missingDigit);
 }
+
+console.log(MissingDigit("3x + 12 = 46")); // saída esperada: 2
+console.log(MissingDigit("1x0 * 12 = 1200")); // saída esperada: 0
+console.log(MissingDigit("8 + 2x = 18")); // saída esperada: 5
+console.log(MissingDigit("15 * 2x = 60")); // saída esperada: 2
+console.log(MissingDigit("5x - 12 = -7")); // saída esperada: 1
+console.log(MissingDigit("3x / 2 = 9")); // saída esperada: 6
