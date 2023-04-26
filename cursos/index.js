@@ -13,4 +13,4 @@ function LongestIncreasingSequence(arr) {
     return Math.max(...lista);
 }
 
-console.log(LongestIncreasingSequence([ 10, 22, 9, 33, 21, 50, 41, 60, 22, 68, 90 ]));
+console.log(LongestIncreasingSequence([ 9, 9, 4, 2 ]));
